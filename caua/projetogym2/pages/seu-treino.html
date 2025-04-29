@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Treino</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border: 1px solid #2d2d2d;
+        }
+
+        h1 {
+            color: #6a1b9a;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #2d2d2d;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #6a1b9a;
+            box-shadow: 0 0 0 0.2rem rgba(106, 27, 154, 0.5);
+        }
+
+        button {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #6a1b9a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seu Treino</h1>
+        
+        <form id="treinoForm">
+            <div class="form-group">
+                <label for="tipoTreino">Tipo de Treino:</label>
+                <select id="tipoTreino" name="tipoTreino">
+                    <option value="forca">Força</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="flexibilidade">Flexibilidade</option>
+                    <option value="equilibrio">Equilíbrio</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="parteCorpo">Parte do Corpo:</label>
+                <select id="parteCorpo" name="parteCorpo">
+                    <option value="peito">Peito</option>
+                    <option value="costas">Costas</option>
+                    <option value="ombros">Ombros</option>
+                    <option value="bracos">Braços</option>
+                    <option value="pernas">Pernas</option>
+                    <option value="abdomen">Abdômen</option>
+                    <option value="core">Core</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="escolherTreino()">Escolher Treino</button>
+        </form>
+    </div>
+
+    <script>
+        function escolherTreino() {
+            const tipoTreino = document.getElementById('tipoTreino').value;
+            const parteCorpo = document.getElementById('parteCorpo').value;
+            
+            // Aqui você pode adicionar lógica para carregar treinos com base nas escolhas
+            alert(`Você escolheu treino de ${tipoTreino} para ${parteCorpo}`);
+        }
+    </script>
+</body>
+</html>

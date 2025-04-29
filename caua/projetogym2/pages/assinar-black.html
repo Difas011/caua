@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinar Plano Básico</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        /* Variáveis de cores */
+        :root {
+            --color-primary: #ff0000; /* Vermelho */
+            --color-white: #ffffff;   /* Branco */
+            --color-black: #000000;   /* Preto */
+            --color-border: #990000;  /* Vermelho escuro */
+        }
+
+        /* Estilo geral */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color-black);
+            color: var(--color-white);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--color-primary);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--color-white);
+            font-size: 2rem;
+        }
+
+        /* Seção de detalhes */
+        .plan-details {
+            margin: 2rem auto;
+            padding: 1.5rem;
+            max-width: 600px;
+            background-color: var(--color-black);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .plan-details h2 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .plan-details p, .plan-details ul {
+            color: var(--color-white);
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+        }
+
+        /* Formulário */
+        .subscription-form {
+            margin: 2rem auto;
+            padding: 1.5rem;
+            max-width: 600px;
+            background-color: var(--color-black);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .subscription-form h2 {
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+
+        .subscription-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--color-white);
+        }
+
+        .subscription-form input {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            background-color: var(--color-black);
+            color: var(--color-white);
+        }
+
+        .subscription-form input:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            box-shadow: 0 0 5px var(--color-primary);
+        }
+
+        .subscription-form button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .subscription-form button:hover {
+            background-color: var(--color-border);
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assinar Plano Básico</h1>
+    </header>
+    <main>
+        <section class="plan-details">
+            <h2>Detalhes do Plano Básico</h2>
+            <p>O Plano Básico oferece acesso limitado às funcionalidades do sistema. Ideal para quem está começando.</p>
+            <ul>
+                <li>Acesso a 10 agendamentos por mês</li>
+                <li>Suporte básico</li>
+                <li>Relatórios simples</li>
+            </ul>
+        </section>
+        <section class="subscription-form">
+            <h2>Formulário de Assinatura</h2>
+            <form id="form-assinar-basico">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="cartao">Número do Cartão:</label>
+                <input type="text" id="cartao" name="cartao" required>
+                
+                <label for="validade">Validade:</label>
+                <input type="month" id="validade" name="validade" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+                
+                <button type="submit" class="btn btn-primary">Assinar Agora</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sistema de Assinaturas</p>
+    </footer>
+</body>
+</html>
