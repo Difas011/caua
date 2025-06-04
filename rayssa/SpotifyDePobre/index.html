@@ -1,0 +1,526 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spotify de Pobre - Sua plataforma de música favorita com playlists personalizadas e descoberta musical.">
+    <meta name="keywords" content="música, streaming, playlist, spotify, áudio, artistas, álbuns">
+    <meta name="author" content="Spotify de Pobre">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://spotify-de-pobre.com/">
+    <meta property="og:title" content="Spotify de Pobre - Streaming de Música">
+    <meta property="og:description" content="Descubra, ouça e compartilhe música com nossa plataforma de streaming.">
+    <meta property="og:image" content="./img/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://spotify-de-pobre.com/">
+    <meta property="twitter:title" content="Spotify de Pobre - Streaming de Música">
+    <meta property="twitter:description" content="Descubra, ouça e compartilhe música com nossa plataforma de streaming.">
+    <meta property="twitter:image" content="./img/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Title -->
+    <title>Vibe T    <article class="card" role="gridcell" tabindex="0">
+        <div class="card-image-container">
+            <!-- Capa da playlist Liked Songs com imagem externa -->
+            <img src="https://th.bing.com/th/id/OIP.H1AHuQESjE5Swh7b88Wc7gAAAA?w=182&h=182&c=7&r=0&o=5&pid=1.7"
+                 alt="Capa da playlist Liked Songs"
+                 class="card-image"
+                 width="200"
+                 height="200"
+                 loading="lazy">
+            <button class="play-button" aria-label="Reproduzir Liked Songs">
+                <span class="material-icons">play_arrow</span>
+            </button>
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Liked Songs</h3>
+            <p class="card-description">61 liked songs</p>
+        </div>
+    </article>une - Streaming de Música</title>
+
+    <!-- Theme Color (You might want to update this to your light blue accent) -->
+    <meta name="theme-color" content="#00b0f0">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Spotify de Pobre",
+        "description": "Plataforma de streaming de música",
+        "url": "https://spotify-de-pobre.com",
+        "applicationCategory": "MusicApplication",
+        "operatingSystem": "Web"
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only">Pular para o conteúdo principal</a>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <span class="material-icons">menu</span>
+    </button>
+
+    <!-- Main Layout Container -->
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" role="navigation" aria-label="Navegação principal">
+            <div class="sidebar-logo">
+                <img src="img/logo.png" alt="Spotify de Pobre - Logo" width="120" height="40" loading="eager">
+            </div>
+
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <ul role="list">
+                    <li>
+                        <a href="#home" aria-current="page" class="active">
+                            <span class="material-icons" aria-hidden="true">home</span>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#search">
+                            <span class="material-icons" aria-hidden="true">search</span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#library">
+                            <span class="material-icons" aria-hidden="true">library_music</span>
+                            <span>Sua Biblioteca</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="sidebar-playlists" aria-labelledby="playlists-heading">
+                <h2 id="playlists-heading" class="playlist-title">Playlists</h2>
+                <ul role="list">
+                    <li>
+                        <button type="button" class="playlist-action">
+                            <span class="material-icons" aria-hidden="true">add</span>
+                            <span>Criar Playlist</span>
+                        </button>
+                    </li>
+                    <li>
+                        <a href="#liked-songs">
+                            <span class="material-icons" aria-hidden="true">favorite</span>
+                            <span>Músicas Curtidas</span>
+                        </a>
+                    </li>
+                    <li><a href="#playlist-1" class="playlist-item">RapCaviar</a></li>
+                    <li><a href="#playlist-2" class="playlist-item">Music mix #1</a></li>
+                    <li><a href="#playlist-3" class="playlist-item">Music mix #2</a></li>
+                    <li><a href="#playlist-4" class="playlist-item">Chill Vibes</a></li>
+                    <li><a href="#playlist-5" class="playlist-item">Workout Hits</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-content" class="main-content" role="main">
+            <!-- Content Header -->
+            <header class="content-header">
+                <nav class="filter-nav" aria-label="Filtros de conteúdo">
+                    <button type="button" class="filter-btn active" data-filter="playlists">
+                        Playlists
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="podcasts">
+                        Podcasts
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="artists">
+                        Artistas
+                    </button>
+                    <button type="button" class="filter-btn" data-filter="albums">
+                        Álbuns
+                    </button>
+                </nav>
+
+                <div class="user-profile">
+                    <img src="img/user.jpg" alt="Foto de perfil de Emily Adams" class="profile-avatar" width="36" height="36" loading="lazy">
+                    <span class="profile-name">Emily Adams</span>
+                    <button type="button" class="profile-dropdown" aria-label="Menu do usuário" aria-expanded="false">
+                        <span class="material-icons" aria-hidden="true">expand_more</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Playlists Section -->
+            <section class="playlists-section" aria-labelledby="playlists-main-heading">
+                <header class="section-header">
+                    <div>
+                        <h1 id="playlists-main-heading">Suas Playlists</h1>
+                        <p class="section-subtitle">Suas playlists e mixes personalizados</p>
+                    </div>
+                    <div class="section-controls">
+                        <label for="sort-select" class="sr-only">Ordenar playlists por</label>
+                        <select id="sort-select" class="sort-dropdown" aria-label="Ordenar playlists">
+                            <option value="relevant">Mais relevantes</option>
+                            <option value="recent" selected>Reproduzidas recentemente</option>
+                            <option value="added">Adicionadas recentemente</option>
+                            <option value="alphabetical">Alfabética</option>
+                            <option value="custom">Ordem personalizada</option>
+                        </select>
+                    </div>
+                </header>
+                <div class="grid">
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <!-- Capa da playlist Liked Songs estilo Spotify -->
+                            <div class="liked-songs-cover">
+                                <span class="material-icons">favorite</span>
+                            </div>
+                            <button class="play-button" aria-label="Reproduzir Liked Songs">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Liked Songs</h3>
+                            <p class="card-description">61 liked songs</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/feeling.jpg" alt="Capa da playlist Feelin Good" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Feelin Good">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Feelin Good</h3>
+                            <p class="card-description">Alan Gogoll, Beast Coast, Ira Wolf...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/focus.jpg" alt="Capa da playlist Focus Now" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Focus Now">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Focus Now</h3>
+                            <p class="card-description">Wardell, Peachy!, Daniela Picciau...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/discover.jpg" alt="Capa da playlist Discover Weekly" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Discover Weekly">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Discover Weekly</h3>
+                            <p class="card-description">Feito para você</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/mix1.jpg" alt="Capa da playlist Daily Mix 1" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Daily Mix 1">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Daily Mix 1</h3>
+                            <p class="card-description">Gene Evaro Jr, Thifany Kauany...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/mix2.jpg" alt="Capa da playlist Daily Mix 2" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Daily Mix 2">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Daily Mix 2</h3>
+                            <p class="card-description">The Serious Hyenas, Lo Zo...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/mix3.jpg" alt="Capa da playlist Daily Mix 3" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Daily Mix 3">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Daily Mix 3</h3>
+                            <p class="card-description">Marie-Clo, No Aloha...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/release.jpg" alt="Capa da playlist Release Radar" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Release Radar">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Release Radar</h3>
+                            <p class="card-description">Feito para você</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/7/77/Slipknot_-_Iowa.jpg" alt="Capa da playlist Slipknot" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Slipknot">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Slipknot</h3>
+                            <p class="card-description">Duality, Psychosocial, Before I Forget...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/5/5c/GunsnRosesAppetiteforDestructionalbumcover.jpg" alt="Capa da playlist Guns N' Roses" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Guns N' Roses">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Guns N' Roses</h3>
+                            <p class="card-description">Sweet Child O' Mine, November Rain...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Metallica_-_Black_Album_cover.jpg" alt="Capa da playlist Metallica" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Metallica">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Metallica</h3>
+                            <p class="card-description">Enter Sandman, Nothing Else Matters...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Queen_The_Greatest_Hits.png" alt="Capa da playlist Queen" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Queen">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Queen</h3>
+                            <p class="card-description">Bohemian Rhapsody, Don't Stop Me Now...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/9/92/ACDC_Back_in_Black.png" alt="Capa da playlist AC/DC" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir AC/DC">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">AC/DC</h3>
+                            <p class="card-description">Back In Black, Highway to Hell...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Led_Zeppelin_-_Led_Zeppelin_IV.jpg" alt="Capa da playlist Led Zeppelin" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Led Zeppelin">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Led Zeppelin</h3>
+                            <p class="card-description">Stairway to Heaven, Immigrant Song...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Rammstein_-_Mutter.png" alt="Capa da playlist Rammstein" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Rammstein">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Rammstein</h3>
+                            <p class="card-description">Du Hast, Sonne, Ich Will...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/PearlJam-Ten2.jpg" alt="Capa da playlist Pearl Jam" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Pearl Jam">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Pearl Jam</h3>
+                            <p class="card-description">Alive, Even Flow, Jeremy...</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Recently Played Section -->
+            <section class="recently-played-section" aria-labelledby="recently-played-heading">
+                <h2 id="recently-played-heading">Tocadas recentemente</h2>
+                <div class="horizontal-scroll">
+                    <!-- Example of recently played items (cards) -->
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/mix1.jpg" alt="Capa da playlist Daily Mix 1" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Daily Mix 1">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Daily Mix 1</h3>
+                            <p class="card-description">Gene Evaro Jr, Thifany Kauany...</p>
+                        </div>
+                    </article>
+                    <article class="card" role="gridcell" tabindex="0">
+                        <div class="card-image-container">
+                            <img src="img/focus.jpg" alt="Capa da playlist Focus Now" class="card-image" width="200" height="200" loading="lazy">
+                            <button class="play-button" aria-label="Reproduzir Focus Now">
+                                <span class="material-icons">play_arrow</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Focus Now</h3>
+                            <p class="card-description">Wardell, Peachy!, Daniela Picciau...</p>
+                        </div>
+                    </article>
+                    <!-- Add more recently played items here -->
+                </div>
+            </section>
+        </main>
+    </div> <!-- End of .container -->
+
+    <!-- Audio Player -->
+    <footer class="player-bar" role="contentinfo" aria-label="Controles do player de música">
+        <div class="track-info">
+            <img src="img/cover.jpg" alt="Capa do álbum - Domestic Sweater" class="track-image" width="48" height="48" loading="lazy">
+            <div class="track-details">
+                <div class="track-title" id="current-track-title">Domestic Sweater</div>
+                <div class="track-artist" id="current-track-artist">Wardell</div>
+            </div>
+            <button type="button" class="like-button" aria-label="Curtir música atual" aria-pressed="false">
+                <span class="material-icons">favorite_border</span>
+            </button>
+        </div>
+
+        <div class="player-controls" role="group" aria-label="Controles de reprodução">
+            <button type="button" class="control-btn shuffle-btn" aria-label="Ativar modo aleatório" aria-pressed="false">
+                <span class="material-icons">shuffle</span>
+            </button>
+            <button type="button" class="control-btn" aria-label="Música anterior">
+                <span class="material-icons">skip_previous</span>
+            </button>
+            <button type="button" class="control-btn play-btn" aria-label="Reproduzir/Pausar" aria-pressed="false">
+                <span class="material-icons">play_arrow</span>
+            </button>
+            <button type="button" class="control-btn" aria-label="Próxima música">
+                <span class="material-icons">skip_next</span>
+            </button>
+            <button type="button" class="control-btn repeat-btn" aria-label="Repetir" aria-pressed="false">
+                <span class="material-icons">repeat</span>
+            </button>
+        </div>
+
+        <div class="progress-section">
+            <time class="time-current" aria-label="Tempo atual">1:45</time>
+            <div class="progress-bar" role="slider" aria-label="Progresso da música" aria-valuemin="0" aria-valuemax="100" aria-valuenow="40" tabindex="0">
+                <div class="progress-fill" style="width: 40%"></div>
+            </div>
+            <time class="time-total" aria-label="Duração total">4:25</time>
+        </div>
+
+        <div class="volume-controls">
+            <button type="button" class="control-btn volume-btn" aria-label="Controle de volume">
+                <span class="material-icons">volume_up</span>
+            </button>
+            <div class="volume-bar" role="slider" aria-label="Volume" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" tabindex="0">
+                <div class="volume-fill" style="width: 80%"></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" aria-hidden="true">
+        <div class="loading-spinner" role="status" aria-label="Carregando...">
+            <span class="sr-only">Carregando...</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(function(registration) {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(function(registrationError) {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+    <style>
+        .liked-songs-cover {
+            width: 100px; /* Reduced size */
+            height: 100px; /* Reduced size */
+            border-radius: 12px;
+            background: linear-gradient(135deg, #450af5 0%, #c4efd9 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+        }
+        .liked-songs-cover .material-icons {
+            font-size: 60px; /* Reduced icon size */
+            color: #fff;
+            opacity: 0.9;
+        }
+    </style>
+</body>
+</html>
+
+
